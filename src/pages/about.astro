@@ -1,6 +1,9 @@
 ---
 import "../styles/global.css";
 
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
 const pageTitle: string = "About me";
 
 type TIdentity = {
@@ -57,9 +60,7 @@ const textCase: string = "uppercase";
     </style>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+    <Header />
     <h1>{pageTitle}</h1>
     <h2>... and my new Astro site!</h2>
     <p>
@@ -100,5 +101,9 @@ const textCase: string = "uppercase";
         <p>My goal is not 3 days.</p>
       )
     }
+    <Footer />
+    <script>
+      import "../scripts/menu";
+    </script>
   </body>
 </html>
