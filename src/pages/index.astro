@@ -1,5 +1,5 @@
 ---
-
+const pageTitle: string = "Home Page";
 ---
 
 <html lang="en">
@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
-    <title>My first Astro app</title>
+    <title>{pageTitle}</title>
     <style>
       h1 {
         color: orange;
@@ -18,6 +18,6 @@
     <a href="/">Home</a>
     <a href="/about/">About</a>
     <a href="/blog/">Blog</a>
-    <h1>My Astro Site</h1>
+    <h1>{pageTitle}</h1>
   </body>
 </html>
